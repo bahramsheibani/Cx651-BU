@@ -1,0 +1,9 @@
+(1) 
+write(1, "hello STDOUT\n", 13hello STDOUT
+)          = 13
+write(2, "ERROR: this is an error", 23ERROR: this is an error) = 23
+
+(2)  follwing calls - it make memory to read only 
+mprotect(0x7c56c814b000, 16384, PROT_READ) = 0
+mprotect(0x5b43de751000, 4096, PROT_READ) = 0
+mprotect(0x7c56c819d000, 8192, PROT_READ) = 0

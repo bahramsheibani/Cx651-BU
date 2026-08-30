@@ -3,8 +3,8 @@ all: calc test-mini test-mini2 caller
 
 # TODO: complete makefile rules for calc, test-mini, test-mini2, caller.
 CC = gcc
-calc: calc.c
-	$(CC) calc.c -c -o calc
+calc: calc.c mystery.o
+	$(CC) -Wall calc.o mystery.o -o calc
 
 test-mini: mini.c test.c
 	$(CC) mini.c test.c -Wall -o test-mini
