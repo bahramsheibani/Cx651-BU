@@ -1,360 +1,360 @@
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 49941
-Elapsed time: 0.020764 seconds
-Fail Rate: 0.099882
-Throughput: 24080138.701599
+Failures: 49879
+Elapsed time: 0.016999 seconds
+Fail Rate: 0.099758
+Throughput: 29413494.911465
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 49941
-Elapsed time: 0.020505 seconds
-Fail Rate: 0.099882
-Throughput: 24384296.513046
+Failures: 49879
+Elapsed time: 0.017160 seconds
+Fail Rate: 0.099758
+Throughput: 29137529.137529
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.018710 seconds
-Fail Rate: 0.100370
-Throughput: 26723677.177980
+Failures: 49879
+Elapsed time: 0.017137 seconds
+Fail Rate: 0.099758
+Throughput: 29176635.350411
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016782 seconds
-Fail Rate: 0.100370
-Throughput: 29793826.719104
+Failures: 49879
+Elapsed time: 0.016997 seconds
+Fail Rate: 0.099758
+Throughput: 29416955.933400
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.017422 seconds
-Fail Rate: 0.100370
-Throughput: 28699345.654919
+Failures: 49879
+Elapsed time: 0.019577 seconds
+Fail Rate: 0.099758
+Throughput: 25540174.694795
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.018909 seconds
-Fail Rate: 0.100370
-Throughput: 26442434.819398
+Failures: 49879
+Elapsed time: 0.019359 seconds
+Fail Rate: 0.099758
+Throughput: 25827780.360556
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016992 seconds
-Fail Rate: 0.100370
-Throughput: 29425612.052731
+Failures: 49879
+Elapsed time: 0.017069 seconds
+Fail Rate: 0.099758
+Throughput: 29292870.115414
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016690 seconds
-Fail Rate: 0.100370
-Throughput: 29958058.717795
+Failures: 49879
+Elapsed time: 0.017049 seconds
+Fail Rate: 0.099758
+Throughput: 29327233.268813
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016147 seconds
-Fail Rate: 0.100370
-Throughput: 30965504.428067
+Failures: 49845
+Elapsed time: 0.016720 seconds
+Fail Rate: 0.099690
+Throughput: 29904306.220096
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 32 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016138 seconds
-Fail Rate: 0.100370
-Throughput: 30982773.577891
+Failures: 49845
+Elapsed time: 0.016874 seconds
+Fail Rate: 0.099690
+Throughput: 29631385.563589
 Test Bench32                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016785 seconds
-Fail Rate: 0.100370
-Throughput: 29788501.638368
+Failures: 49845
+Elapsed time: 0.017866 seconds
+Fail Rate: 0.099690
+Throughput: 27986118.885033
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.017034 seconds
-Fail Rate: 0.100370
-Throughput: 29353058.588705
+Failures: 49845
+Elapsed time: 0.017595 seconds
+Fail Rate: 0.099690
+Throughput: 28417163.967036
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016782 seconds
-Fail Rate: 0.100370
-Throughput: 29793826.719104
+Failures: 49845
+Elapsed time: 0.017970 seconds
+Fail Rate: 0.099690
+Throughput: 27824151.363383
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016641 seconds
-Fail Rate: 0.100370
-Throughput: 30046271.257737
+Failures: 49845
+Elapsed time: 0.017737 seconds
+Fail Rate: 0.099690
+Throughput: 28189660.032700
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016703 seconds
-Fail Rate: 0.100370
-Throughput: 29934742.261869
+Failures: 49845
+Elapsed time: 0.017634 seconds
+Fail Rate: 0.099690
+Throughput: 28354315.526823
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016807 seconds
-Fail Rate: 0.100370
-Throughput: 29749509.133099
+Failures: 49845
+Elapsed time: 0.017364 seconds
+Fail Rate: 0.099690
+Throughput: 28795208.477309
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016571 seconds
-Fail Rate: 0.100370
-Throughput: 30173194.134331
+Failures: 49845
+Elapsed time: 0.017045 seconds
+Fail Rate: 0.099690
+Throughput: 29334115.576415
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.018684 seconds
-Fail Rate: 0.100370
-Throughput: 26760864.911154
+Failures: 49845
+Elapsed time: 0.016888 seconds
+Fail Rate: 0.099690
+Throughput: 29606821.411653
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.017252 seconds
-Fail Rate: 0.100370
-Throughput: 28982146.997450
+Failures: 49845
+Elapsed time: 0.016943 seconds
+Fail Rate: 0.099690
+Throughput: 29510712.388597
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 64 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.017139 seconds
-Fail Rate: 0.100370
-Throughput: 29173230.643561
+Failures: 49845
+Elapsed time: 0.017028 seconds
+Fail Rate: 0.099690
+Throughput: 29363401.456425
 Test Bench64                  : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.015695 seconds
-Fail Rate: 0.100370
-Throughput: 31857279.388340
+Failures: 49845
+Elapsed time: 0.015776 seconds
+Fail Rate: 0.099690
+Throughput: 31693711.967546
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.015542 seconds
-Fail Rate: 0.100370
-Throughput: 32170891.777120
+Failures: 49845
+Elapsed time: 0.015790 seconds
+Fail Rate: 0.099690
+Throughput: 31665611.146295
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.015761 seconds
-Fail Rate: 0.100370
-Throughput: 31723875.388617
+Failures: 49845
+Elapsed time: 0.016037 seconds
+Fail Rate: 0.099690
+Throughput: 31177901.103698
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.015706 seconds
-Fail Rate: 0.100370
-Throughput: 31834967.528333
+Failures: 49845
+Elapsed time: 0.015745 seconds
+Fail Rate: 0.099690
+Throughput: 31756113.051762
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.015924 seconds
-Fail Rate: 0.100370
-Throughput: 31399145.943230
+Failures: 49845
+Elapsed time: 0.015950 seconds
+Fail Rate: 0.099690
+Throughput: 31347962.382445
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.015647 seconds
-Fail Rate: 0.100370
-Throughput: 31955007.349652
+Failures: 49845
+Elapsed time: 0.016068 seconds
+Fail Rate: 0.099690
+Throughput: 31117749.564352
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.015797 seconds
-Fail Rate: 0.100370
-Throughput: 31651579.413813
+Failures: 49845
+Elapsed time: 0.016019 seconds
+Fail Rate: 0.099690
+Throughput: 31212934.640115
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.015737 seconds
-Fail Rate: 0.100370
-Throughput: 31772256.465654
+Failures: 49845
+Elapsed time: 0.015740 seconds
+Fail Rate: 0.099690
+Throughput: 31766200.762389
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.016383 seconds
-Fail Rate: 0.100370
-Throughput: 30519440.883843
+Failures: 49845
+Elapsed time: 0.016029 seconds
+Fail Rate: 0.099690
+Throughput: 31193461.850396
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 128 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.015748 seconds
-Fail Rate: 0.100370
-Throughput: 31750063.500127
+Failures: 49845
+Elapsed time: 0.016262 seconds
+Fail Rate: 0.099690
+Throughput: 30746525.642602
 Test Bench128                 : 1/1
 Total: 1/1
 Benchmark 256 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.014636 seconds
-Fail Rate: 0.100370
-Throughput: 34162339.437005
+Failures: 49845
+Elapsed time: 0.014812 seconds
+Fail Rate: 0.099690
+Throughput: 33756413.718607
 Test Bench256                 : 1/1
 Total: 1/1
 Benchmark 256 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.014518 seconds
-Fail Rate: 0.100370
-Throughput: 34440005.510401
+Failures: 49845
+Elapsed time: 0.014874 seconds
+Fail Rate: 0.099690
+Throughput: 33615705.257496
 Test Bench256                 : 1/1
 Total: 1/1
 Benchmark 256 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.014710 seconds
-Fail Rate: 0.100370
-Throughput: 33990482.664854
+Failures: 49845
+Elapsed time: 0.014845 seconds
+Fail Rate: 0.099690
+Throughput: 33681374.200067
 Test Bench256                 : 1/1
 Total: 1/1
 Benchmark 256 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
+Failures: 49845
+Elapsed time: 0.014824 seconds
+Fail Rate: 0.099690
+Throughput: 33729087.965461
+Test Bench256                 : 1/1
+Total: 1/1
+Benchmark 256 Byte Allocation Maximum
+MMAP
+Allocations attempted: 500000
+Failures: 49845
+Elapsed time: 0.014658 seconds
+Fail Rate: 0.099690
+Throughput: 34111065.629690
+Test Bench256                 : 1/1
+Total: 1/1
+Benchmark 256 Byte Allocation Maximum
+MMAP
+Allocations attempted: 500000
+Failures: 49845
+Elapsed time: 0.014798 seconds
+Fail Rate: 0.099690
+Throughput: 33788349.776997
+Test Bench256                 : 1/1
+Total: 1/1
+Benchmark 256 Byte Allocation Maximum
+MMAP
+Allocations attempted: 500000
+Failures: 49845
+Elapsed time: 0.014612 seconds
+Fail Rate: 0.099690
+Throughput: 34218450.588557
+Test Bench256                 : 1/1
+Total: 1/1
+Benchmark 256 Byte Allocation Maximum
+MMAP
+Allocations attempted: 500000
+Failures: 49845
+Elapsed time: 0.014543 seconds
+Fail Rate: 0.099690
+Throughput: 34380801.760297
+Test Bench256                 : 1/1
+Total: 1/1
+Benchmark 256 Byte Allocation Maximum
+MMAP
+Allocations attempted: 500000
+Failures: 49845
 Elapsed time: 0.014455 seconds
-Fail Rate: 0.100370
+Fail Rate: 0.099690
 Throughput: 34590107.229332
 Test Bench256                 : 1/1
 Total: 1/1
 Benchmark 256 Byte Allocation Maximum
 MMAP
 Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.014469 seconds
-Fail Rate: 0.100370
-Throughput: 34556638.330223
-Test Bench256                 : 1/1
-Total: 1/1
-Benchmark 256 Byte Allocation Maximum
-MMAP
-Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.014899 seconds
-Fail Rate: 0.100370
-Throughput: 33559299.281831
-Test Bench256                 : 1/1
-Total: 1/1
-Benchmark 256 Byte Allocation Maximum
-MMAP
-Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.014536 seconds
-Fail Rate: 0.100370
-Throughput: 34397358.282884
-Test Bench256                 : 1/1
-Total: 1/1
-Benchmark 256 Byte Allocation Maximum
-MMAP
-Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.014520 seconds
-Fail Rate: 0.100370
-Throughput: 34435261.707989
-Test Bench256                 : 1/1
-Total: 1/1
-Benchmark 256 Byte Allocation Maximum
-MMAP
-Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.014407 seconds
-Fail Rate: 0.100370
-Throughput: 34705351.565211
-Test Bench256                 : 1/1
-Total: 1/1
-Benchmark 256 Byte Allocation Maximum
-MMAP
-Allocations attempted: 500000
-Failures: 50185
-Elapsed time: 0.014380 seconds
-Fail Rate: 0.100370
-Throughput: 34770514.603616
+Failures: 49845
+Elapsed time: 0.014762 seconds
+Fail Rate: 0.099690
+Throughput: 33870749.220973
 Test Bench256                 : 1/1
 Total: 1/1

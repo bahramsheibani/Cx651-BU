@@ -50,12 +50,7 @@ void *new_malloc(size_t size)
 
     // Find a free block that fits the requested size
     m_header *curr = freelist;
-    int blockSize = 0;
-    blockSize = size / 16;
-    if (size % 16 != 0)
-    {
-        blockSize = ((size / 16) + 1) * 16; // Round up to the nearest multiple of 16
-    }
+    int blockSize = ((size + 15) / 16) * 16; // Round up to the nearest multiple of 16
 
     while (curr != NULL)
     {

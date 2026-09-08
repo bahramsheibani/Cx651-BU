@@ -1,1 +1,32 @@
 (1) due to internal fragmentation there is not enough memory to allocate.
+
+(2) plot-fail_rate.png: t.out (the first-fit allocator with no splitting/coalescing)
+holds a flat, low fail rate of ~0.1 across every allocation size tested (2^5 to
+2^8). t2.out (test-coalesce, which splits blocks on malloc and coalesces
+adjacent free blocks on free) starts at the same ~0.1 fail rate for small
+allocations (2^5) but climbs steeply as the max allocation size grows,
+reaching ~0.5 at 2^6, ~0.71 at 2^7, and ~0.82 at 2^8.
+
+plot-throughput.png: both allocators track each other closely and both
+increase in allocations/sec as the max allocation size grows. t.out and
+t2.out are nearly identical at 2^5 and 2^6 (crossing over between them), but
+t2.out pulls modestly ahead of t.out at the larger sizes (2^7 and 2^8).
+
+test-coalesce (t2.out) has the better throughput overall, since it is
+ahead at 3 of the 4 tested sizes (2^5, 2^7, 2^8) and only trails slightly at
+2^6. Splitting blocks lets a single mmap'd arena satisfy more, smaller
+requests without needing additional mmap calls, and coalescing keeps the
+free list from filling up with unusably tiny fragments, so on average fewer
+list nodes need to be traversed to find a fit, which keeps allocations/sec
+high even as request sizes grow.
+
+(3) test (t.out) has the better (lower) fail rate, staying flat at ~0.1
+regardless of allocation size, while test-coalesce's fail rate rises sharply
+with size. Because test never splits a block, every free block stays as
+large as it was originally, so a block that was once big enough to satisfy
+a request remains big enough later. test-coalesce, on the other hand, splits
+blocks into a used piece and a leftover free piece on every allocation; as
+the max allocation size increases, more of the 2048-byte arena gets carved
+into small leftover slivers (each with its own header overhead) that are
+too small to satisfy the next large request, so despite coalescing on free,
+the arena fragments faster than it can be repaired, driving the fail rate up.
