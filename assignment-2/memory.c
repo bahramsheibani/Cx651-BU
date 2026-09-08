@@ -36,13 +36,29 @@ void * new_malloc(size_t size) {
             printf("map failed\n");
             return NULL;
         }
-
+        freelist->size = 2048 - sizeof(m_header);
+        freelist->prev = NULL;
+        freelist->next = NULL;
+        freelist->in_use = 0;
 
     }
 
+    // Find a free block that fits the requested size
+    m_header* curr = freelist;
+    while(curr != NULL) {
+        if(!curr->in_use && curr->size >= size) {
+            curr->in_use = 1;
+            return (void*)(curr + 1); // Return the memory just after the header
+        }
+        curr = curr->next;
+    }
+
+    // No suitable block found
     return NULL;
 }
 
 void new_free(void * ptr) {
-
+    if(ptr == NULL) return;
+    m_header* header = (m_header*)ptr - 1; 
+    header->in_use = 0;
 }
