@@ -35,7 +35,7 @@ void fill_digit(int start_x, int digit, struct image *img)
         {
             int bit = GET_BIT(digit, 6 - j);
             int color = bit ? 255 : 0;
-            img->pixels[i * img->width + start_x + j].r = colo./ter;
+            img->pixels[i * img->width + start_x + j].r = color;
             img->pixels[i * img->width + start_x + j].g = color;
             img->pixels[i * img->width + start_x + j].b = color;
         }
