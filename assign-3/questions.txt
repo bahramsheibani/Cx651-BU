@@ -1,0 +1,6 @@
+(1) filter1 and filter2 both accessing pixels via loops but with different approach - filter1 accessing elemnts not sequenntially and jumping from 1 row to another row and but filter 2
+accessing them in row sequentially. Filter1 will cause Cache MISS as it wont be able to benefit from Partial Locality 
+But filter 2 processing will benefit from Partial locality and will be faster.
+(2) The result in each out file shows the size of image that is processed in each run and the run time for each run.
+ For the same size of image run time doesnt vary much for each filter . From the start filter1 run time is longer than
+filter 2 run time du to accessing pixels data in different way. 
