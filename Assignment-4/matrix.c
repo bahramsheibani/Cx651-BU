@@ -49,24 +49,29 @@ float do_job(int rows1, int cols1, int cols2, int forever) {
     int *matrix1 = (int *)malloc(rows1 * cols1 * sizeof(int));
     int *matrix2 = (int *)malloc(cols1 * cols2 * sizeof(int));
     int *result = (int *)malloc(rows1 * cols2 * sizeof(int));
-
+    struct timespec t0, t1;
     generate_random_matrix(rows1, cols1, matrix1);
     generate_random_matrix(cols1, cols2, matrix2);
 
-    clock_t start = clock();
-    for (int i = 0; i < forever; i++) {
+    timespec_get(&t0, TIME_UTC);  
+    do {
         multiply_matrices(rows1, cols1, matrix1, cols1, cols2, matrix2, result);
-    }
-    clock_t end = clock();
+    } while (forever);
 
-    float time = (float)(end - start) / CLOCKS_PER_SEC;
+    timespec_get(&t1, TIME_UTC);
+
+    float dns = (float)(t1.tv_nsec - t0.tv_nsec) / 1000000000;
+
+    // seconds elapsed
+    float ds = (float)(t1.tv_sec - t0.tv_sec);
+
+    float total_time = dns+ds;
 
     free(matrix1);
     free(matrix2);
     free(result);
-
-    return time;
-
+    printf("%dx%d matrices: %f seconds", rows1, cols1, total_time);
+    return total_time;
    
 }
 
