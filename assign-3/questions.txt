@@ -4,3 +4,42 @@ But filter 2 processing will benefit from Partial locality and will be faster.
 (2) The result in each out file shows the size of image that is processed in each run and the run time for each run.
  For the same size of image run time doesnt vary much for each filter . From the start filter1 run time is longer than
 filter 2 run time du to accessing pixels data in different way. 
+(3) running filter 2
+==13126== 
+==13126== I refs:        130,999,538
+==13126== I1  misses:          1,497
+==13126== LLi misses:          1,469
+==13126== I1  miss rate:        0.00%
+==13126== LLi miss rate:        0.00%
+==13126== 
+==13126== D refs:         60,434,283  (56,222,328 rd   + 4,211,955 wr)
+==13126== D1  misses:        394,681  (   197,648 rd   +   197,033 wr)
+==13126== LLd misses:        198,072  (     1,099 rd   +   196,973 wr)
+==13126== D1  miss rate:         0.7% (       0.4%     +       4.7%  )
+==13126== LLd miss rate:         0.3% (       0.0%     +       4.7%  )
+==13126== 
+==13126== LL refs:           396,178  (   199,145 rd   +   197,033 wr)
+==13126== LL misses:         199,541  (     2,568 rd   +   196,973 wr)
+==13126== LL miss rate:          0.1% (       0.0%     +       4.7%  )
+
+running filter1
+time = 0.790843 seconds
+Result: 458131
+==13337== 
+==13337== I refs:        130,999,536
+==13337== I1  misses:          1,496
+==13337== LLi misses:          1,469
+==13337== I1  miss rate:        0.00%
+==13337== LLi miss rate:        0.00%
+==13337== 
+==13337== D refs:         60,434,282  (56,222,327 rd   + 4,211,955 wr)
+==13337== D1  misses:      1,346,237  ( 1,149,204 rd   +   197,033 wr)
+==13337== LLd misses:        198,072  (     1,099 rd   +   196,973 wr)
+==13337== D1  miss rate:         2.2% (       2.0%     +       4.7%  )
+==13337== LLd miss rate:         0.3% (       0.0%     +       4.7%  )
+==13337== 
+==13337== LL refs:         1,347,733  ( 1,150,700 rd   +   197,033 wr)
+==13337== LL misses:         199,541  (     2,568 rd   +   196,973 wr)
+==13337== LL miss rate:          0.1% (       0.0%     +       4.7%  )
+
+As expected D1 miss rate in filter 1 much higher that filter 2 due to the fact that filter 2 using Spatial locality in the implemention

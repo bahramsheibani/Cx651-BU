@@ -16,6 +16,7 @@ int main(int argc, char *argv[]) {
     int cols2 = atoi(argv[3]);
 
     int run_ = atoi(argv[4]);
+    int forever = run_;
 
 
     // Check if dimensions are valid for matrix multiplication
@@ -24,6 +25,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    do_job(rows1, cols1,cols2, run_);
+    float elapsed = do_job(rows1, cols1, cols2, forever);
+
+    if (!forever) {
+        printf("%dx%d matrices: %.6f seconds\n",
+               rows1, cols1, elapsed);
+    }
+    
     return 0;
 }
