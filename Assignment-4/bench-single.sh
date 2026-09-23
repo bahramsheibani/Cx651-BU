@@ -8,7 +8,7 @@ mkdir -p data/bench-single
 
 for i in $(seq 100 100 1000)
 do
-    /usr/bin/time -f "CPU: %P\n" -o data/bench-single/mm-${i}-cpu.out ./bench ${i} ${i} ${i} 0 > data/bench-single/mm-${i}.out 
+    /usr/bin/time /usr/bin/time -f "CPU: %P\n" -o data/bench-single/mm-${i}-cpu.out ./bench ${i} ${i} ${i} 0 > data/bench-single/mm-${i}.out 
     pids[${i}]=$!
     echo $(date)
 done

@@ -1,0 +1,1 @@
+Usage: ./bench <rows1> <cols1> <cols2> <run forever? 0/1>
