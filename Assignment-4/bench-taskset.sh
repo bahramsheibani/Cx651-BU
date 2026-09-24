@@ -4,11 +4,12 @@
 echo $(date)
 echo "starting matrix multiply"
 
-mkdir -p data/bench-single
+mkdir -p data/bench-taskset
 
 for i in $(seq 100 100 1000)
 do
-    /usr/bin/taskset -c 0 /usr/bin/time -f "CPU: %P\n" -o data/bench-single/mm-${i}-cpu.out ./bench ${i} ${i} ${i} 0 > data/bench-single/mm-${i}.out 
+    taskset -c 0  /usr/bin/time -f "CPU: %P\n" -o data/bench-taskset/mm-${i}-cpu.out ./bench ${i} ${i} ${i} 0 > data/bench-taskset/mm-${i}.out&
+
     pids[${i}]=$!
     echo $(date)
 done

@@ -1,1 +1,3 @@
-(1) 
+(1) Compared to plot-single.png, the concurrent runs take substantially longer and show more variation in execution time. CPU usage is also lower and fluctuates around 25-40%, rather than increasing with matrix size, because the ten processes are sharing the available CPU resources.
+
+(2) Compared to plot-multi.png, plot-taskset.png shows execution time increasing much more sharply as the matrix size and number of competing jobs increase. Since all processes are restricted to the same CPU, they must take turns and experience greater contention; CPU usage is also lower, rising only gradually instead of remaining around the higher, steadier multi-process levels.
