@@ -70,7 +70,6 @@ float do_job(int rows1, int cols1, int cols2, int forever) {
     free(matrix1);
     free(matrix2);
     free(result);
-    printf("%dx%d matrices: %f seconds", rows1, cols1, total_time);
     return total_time;
    
 }
