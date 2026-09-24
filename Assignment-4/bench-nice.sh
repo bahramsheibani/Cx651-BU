@@ -10,6 +10,7 @@ mkdir -p data/bench-nice
 run_id=0
 pids=()
 
+
 for i in $(seq 100 100 100)
 do
     nice_value=0
