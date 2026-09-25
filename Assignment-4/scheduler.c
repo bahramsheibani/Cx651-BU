@@ -57,9 +57,9 @@ float run_SJF(const int* jobs, int size) {
 }
 
 float FIFO(int* jobs, int size) {
-    return run_FIFO(jobs, size).average_response_time;
+    return run_jobs(jobs, size);
 }
 
 float SJF(int* jobs, int size) {
-    return run_SJF(jobs, size).average_response_time;
+    return run_SJF(jobs, size);
 }
