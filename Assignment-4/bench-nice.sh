@@ -19,9 +19,9 @@ do
         echo "run ${run_id} will be nice ${nice_value}"
     fi
 
-    nice -n "$nice_value" /usr/bin/time -f "CPU: %P\n" -o "data/bench-nice/mm-${run_id}-cpu.out" ./bench "100" "100" "100" 0 > "data/bench-nice/mm-${run_id}.out"
-    pids[${i}]=+1
-    echo "started run ${run_id}: ${i}x${i}, nice ${nice_value}"
+    nice -n "$nice_value" /usr/bin/time -f "CPU: %P\n" -o "data/bench-nice/mm-${run_id}-cpu.out" ./bench "500" "500" "500" 0 > "data/bench-nice/mm-${run_id}.out" &
+    pids[${i}]=$!
+    echo "started run ${run_id}: nice ${nice_value}"
     run_id=$((run_id + 1))
 done
 
